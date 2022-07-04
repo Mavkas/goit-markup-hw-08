@@ -1,0 +1,24 @@
+.page-header{border-bottom: 1px solid #ECECEC;}    
+
+.menu__item:not(:last-child)
+{margin-right: 8px;}
+
+.menu__btn{  
+display: inline-block; 
+border-radius: 6px;
+border-style: none;
+padding: 6px 22px;
+text-align: center;
+max-width: 145px;
+cursor: pointer;  
+background: var(--background-light-color);
+font-weight: 500;
+font-size: 16px;
+line-height: 1.6;
+color:var(--title-text-color);
+&:hover{background: var(--accent-color);
+    color: var(--secondary-color);}
+&:focus{background: var(--accent-color);
+    color: var(--secondary-color);}
+}  
+

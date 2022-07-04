@@ -1,0 +1,108 @@
+
+    
+    .address{background: var(--background-color);
+    padding-top: 60px;
+    padding-bottom: 60px;
+  &__flex{max-width: 376px;
+    min-height: 112px;
+    margin-right: 70px;}}
+    
+    .contact__item--text{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    color:var(--secondary-color);}
+    
+    .contact__mail--text{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height:24px;
+    color: var(--link-color);}
+    
+    .contact__tel--text{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;    
+    color: var(--link-color);}
+    
+    .contact__item, .contact__mail{
+        margin-bottom: 9px;} 
+    
+    .contact__item{margin-top: 20px;}
+    .address>.container{
+        display: flex;
+        align-items: baseline;}
+    
+    
+    /*------------------------footer slogan----------*/
+    .slogan__text{
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--secondary-color);
+    margin-bottom: 20px;}
+    .slogan__list{
+    display: flex;
+    justify-content: center;
+    align-items: center;}
+    
+    .slogan__item{
+    width: 44px;
+    height: 44px;
+    margin-right: 10px;}
+    .slogan__item:last-child{margin-right: 0;}
+    
+    .slogan__link{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background-color:rgba(255, 255, 255, 0.1);
+  &:hover{background-color: var(--accent-color);}}
+    .slogan__icon{fill:var(--secondary-color);}
+    
+    
+    /*--------------------footer subsribe----------------*/
+    
+  
+      .subscribe {
+        width: 570px;
+        margin-left: auto;
+      &__form {
+        display: flex;}
+      &__text {
+        margin-bottom: 20px;
+        color: var(--secondary-color);
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 16px;
+        text-transform: uppercase;}
+      &__input {
+          width: 358px;
+          height: 50px;
+          padding: 15px 16px;
+          margin-right: 12px;
+        
+          border: 1px solid rgba(255, 255, 255, 0.3);
+          border-radius: 4px;
+          background-color: transparent;
+          font-family: inherit;
+          color: var(--secondary-color);
+          font-size: 16px;
+          line-height: 1.25;
+      &:placeholder-shown {
+          color: rgba(255, 255, 255, 0.6);
+          font-size: 16px;
+          line-height: 1.25;}}
+      }
+      
+     
+      
+      

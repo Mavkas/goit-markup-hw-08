@@ -1,0 +1,21 @@
+html{box-sizing: border-box;}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;}
+
+:root{--primary-text-color:#757575;
+    --title-text-color:#212121;
+    --accent-color:#2196F3;
+    --secondary-color: #FFFFFF;
+    --background-color:#2F303A;
+    --background-light-color:#F5F4FA;
+    --link-color: rgba(255, 255, 255, 0.6);
+    --cubic: cubic-bezier(0.4, 0, 0.2, 1);
+    --timing-function: 250ms;}
+
+.page{
+    font-family: 'Roboto', sans-serif;
+    background:var(--secondary-color);
+    letter-spacing: 0.03em;
+    font-size: 14px;}
