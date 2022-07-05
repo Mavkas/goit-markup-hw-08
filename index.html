@@ -41,11 +41,12 @@
             <use href="./images/heading/menu.svg#icon-menu"></use>
         </svg>
        </button>
-    </div>  
-    <div>
-        <div class="mob-menu">
+     
+   
+        <div class="mob-menu is-hidden" data-menu>
             <div class="mob-container">
-        <button class="menu-close-btn" type="button"> 
+        <div class="mob-menu__top">
+        <button class="menu-close-btn" data-menu-close type="button"> 
             <svg class="close-menu" width="40px" height="40px">
                 <use href="./images/heading/close-menu.svg#close-menu"></use>
             </svg>
@@ -56,6 +57,8 @@
             <li class="mob-menu__item"><a class="mob-menu__link" href="./portfolio.html">Портфолио</a></li>
             <li class="mob-menu__item"><a class="mob-menu__link" href="">Контакты</a></li>
         </ul>
+    </div> 
+    <div class="mob-menu__bottom">
         <ul class="mob-connect__list">
               <li class="mob-connect__item"><a class="mob-connect__tel" href="tel:+380961111111" target="_blank">
              <!--<svg class="icon-phone" width="12px" height="16px">
@@ -74,6 +77,7 @@
         <li class="mob-soc-item">Facebook</li>
         <li class="mob-soc-item">Linkedln</li>
      </ul>
+    </div> 
     </div> 
     </div>  
     </div>
@@ -303,8 +307,9 @@
     </div>
 </section>
 </main>
-<!--<footer class="address">
+<footer class="address">
 <div class="container">
+    <div class="address__wrapper-tab">
     <div class="address__flex">
     <a class="address__logo" lang="en" href=""><span class="address__logo--color">Web</span>Studio</a>
      <address class="contact">
@@ -346,6 +351,7 @@
             </li>
         </ul>
         </div>
+    </div>
         <div class="subscribe">
             <p class="subscribe__text">Подпишитесь на рассылку</p>
             <form class="subscribe__form">
@@ -359,7 +365,7 @@
     </form>
   </div>
 </div>
-</footer>-->
+</footer>
 <!--<div class="backdrop is-hidden" data-modal>
     <div class="modal">
             <button type="button" class="modal__close--btn" data-modal-close>

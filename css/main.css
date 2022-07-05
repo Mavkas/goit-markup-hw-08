@@ -734,6 +734,13 @@ textarea:hover {
   padding-top: 60px;
   padding-bottom: 60px;
 }
+@media screen and (min-width: 768px) {
+  .address__wrapper-tab {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-around;
+  }
+}
 .address__flex {
   max-width: 376px;
   min-height: 112px;
@@ -861,6 +868,12 @@ textarea:hover {
   display: flex;
   align-items: center;
 }
+@media screen and (max-width: 768px) {
+  .container__header {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+}
 
 .nav {
   display: flex;
@@ -954,11 +967,9 @@ textarea:hover {
   border: none;
   cursor: pointer;
   fill: currentColor;
+  transition: fill var(--timing-function) var(--cubic);
 }
-.menu-open-btn:hover {
-  color: var(--accent-color);
-}
-.menu-open-btn:focus {
+.menu-open-btn:hover, .menu-open-btn:focus {
   color: var(--accent-color);
 }
 
@@ -970,8 +981,18 @@ textarea:hover {
   width: 100vw;
   height: 100vw;
   z-index: 10;
-  opacity: 1;
   transition: opacity var(--timing-function) var(--cubic), visibility var(--timing-function) var(--cubic);
+}
+@media screen and (min-width: 768px) {
+  .mob-menu {
+    display: none;
+  }
+}
+
+.mob-menu.is-hidden {
+  opacity: 0;
+  pointer-events: none;
+  visibility: hidden;
 }
 
 .mob-container {
@@ -984,7 +1005,13 @@ textarea:hover {
 }
 
 .menu-close-btn {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  width: 40px;
+  height: 40px;
   display: block;
+  padding: 0;
   margin-left: auto;
   background: none;
   border: none;
@@ -994,12 +1021,6 @@ textarea:hover {
 }
 .menu-close-btn:hover, .menu-close-btn:focus {
   color: var(--accent-color);
-}
-
-.mob-menu.is-hidden {
-  opacity: 0;
-  pointer-events: none;
-  visibility: hidden;
 }
 
 .mob-menu__item:not(:last-child) {

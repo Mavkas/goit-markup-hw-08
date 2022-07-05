@@ -1,8 +1,13 @@
 
     
-    .address{background: var(--background-color);
+    .address{
+    background: var(--background-color);
     padding-top: 60px;
     padding-bottom: 60px;
+  &__wrapper-tab{
+    @include tablet {display: flex;
+    align-items: baseline;
+    justify-content: space-around;}}
   &__flex{max-width: 376px;
     min-height: 112px;
     margin-right: 70px;}}
