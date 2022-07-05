@@ -3,26 +3,61 @@
     margin-left: auto;
     margin-right: auto;
     background: var(--background-color);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
     background-image: linear-gradient(
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)),
     url(../images/icons.svg/heading.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;}
+    @include retina 
+    {background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)),
+    url(../images/heading/desktop-2x.jpg);}
+    @include mobile{
+        background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)),
+    url(../images/heading/mobile.jpg);};
+    @include retina
+    {background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)),
+    url(../images/heading/mobile-2x.jpg);};
+    @include tablet{
+        background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)),
+    url(../images/heading/tablet.jpg);};
+    @include retina
+    {background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)),
+    url(../images/heading/tablet-2x.jpg);};
+    };
+
     
     .heading{
     display: flex;
     align-items: center;
     text-align: center;
+    padding-top: 118px;
+    padding-bottom: 118px;
+    @include desktop{
     padding-top: 200px;
     padding-bottom: 200px;}
+    }
     
     .heading__title {
-    width: 696px;
-    font-weight: 900;
-    font-size: 44px;
-    line-height: 1.36;
+    width: 360px;
+    @include font (24px, 900, 1.62);
+    text-align: center;
+    @include desktop{
+        width: 696px;
+        font-weight: 900;
+        font-size: 44px;
+        line-height: 1.36;};
     margin: 0 auto;
     letter-spacing: 0.06em;
     text-transform: uppercase;

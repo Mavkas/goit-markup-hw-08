@@ -13,7 +13,11 @@ background: var(--background-light-color);
     gap: 30px;}
 &__title{
     margin-bottom: 50px;
-    @include font (36px, 700, 1.16);
+    @include font (28px, 700, 1.18);
+    @include desktop{
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 1.16;};
     text-align: center;
     color:var(--title-text-color);}
 &__subtitle{
@@ -23,7 +27,7 @@ background: var(--background-light-color);
     color:var(--title-text-color);}
 &__text{
     margin-bottom: 16px;
-    @include font (16px, null, 1.18);
+    @include font (16px, null, 1.19);
     text-align: center;
     color:var(--primary-text-color);}
 &__container{

@@ -44,8 +44,7 @@
     background-color:var(--background-light-color) ;
     border-radius: 4px;}
     
-    .work{//padding-top: 94px;
-       // padding-bottom: 94px;
+    .work{
        @include mobile {
         padding-top: 60px;
         padding-bottom: 60px;}
@@ -59,6 +58,7 @@
         gap: 30px;}
     &__title {
         text-align: center;
+        @include tablet {text-align:left};
         @include font (14px, 700, 1.14);
         text-transform: uppercase;
         color:var(--title-text-color);} 

@@ -1,6 +1,4 @@
 .clients{
-    //padding-top: 94px;
-    //padding-bottom: 94px;
 @include mobile {
 padding-top: 60px;
 padding-bottom: 60px;}
@@ -10,8 +8,8 @@ padding-bottom: 60px;}
 padding-bottom: 94px;}
 &__logo{fill: currentColor;}
 &__title{
-    margin-bottom: 50px;
-    @include font (36px, 700, 1.16);
+    margin-bottom: 30px;
+    @include font (28px, 700, 1.18);
     text-align: center;
     color:var(--title-text-color);}
 &__list{display: flex;
@@ -20,16 +18,18 @@ padding-bottom: 94px;}
 }
 //&__list li:not(:last-child)
 //{margin-right: 30px;}
+
 &__item
-//{box-sizing: border-box;}
-{width: calc((100% - 30px)/2);
+{@include desktop{box-sizing: border-box;};
+    width: calc((100% - 30px)/2);
     @media screen and (min-width:768px) {
         width: calc((100% - 60px)/3);}  
         @media screen and (min-width:1200px) {
             width: calc((100% - 150px)/6);}    }
 &__link{
     display: inline-flex;
-    width:170px;
+    width:210px;
+    @include desktop{width: 170px;};
     height:92px;
     justify-content: center;
     align-items: center;
