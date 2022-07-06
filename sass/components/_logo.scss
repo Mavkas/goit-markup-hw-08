@@ -1,7 +1,8 @@
 .nav__logo{
     padding-top: 24px;
     padding-bottom: 25px;
-    margin-right: 93px;
+    @include tablet {margin-right: 88px;}
+    @include desktop {margin-right: 93px;}
     font-family: 'Raleway';
     font-weight: 700;
     font-size: 26px;
