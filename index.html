@@ -133,8 +133,19 @@
         <h2 class="team__title">Наша команда</h2>
         <div class="container">
     <ul class="team__list">
-        <li class="team__card">            
-            <img src="./images/img1-1.jpg" alt="мужчина" width="270" height="260">
+        <li class="team__card"> 
+            <picture>
+                <source 
+                media="(min-width: 1200px)"
+                srcset="./images/img1-1.jpg 1x" />
+                <source
+                media="(min-width: 768px)"
+                srcset="./images/tablet/img1-1tab.jpg 1x, ./images/tablet/img1-1tab-2x.jpg 2x" />
+                <source
+                media="(min-width: 480px)"
+                srcset="./images/mobile/img1-1mob.jpg 1x, ./images/mobile/img1-1mob-2x.jpg 2x" />
+                <img src="./images/mobile/img1-1mob.jpg" alt="мужчина" width="450" />
+                </picture>           
             <div class="team__container">
             <h3 class="team__subtitle">Игорь Демьяненко</h3>
             <p class="team__text">Product Designer</p>
@@ -167,7 +178,19 @@
     </div>   
         </li>
         <li class="team__card">
-            <img src="./images/img1-2.jpg" alt="женщина" width="270" height="260">
+            <picture>
+            <source 
+            media="(min-width: 1200px)"
+            srcset="./images/img1-2.jpg 1x" />
+            <source
+            media="(min-width: 768px)"
+            srcset="./images/tablet/img1-2tab.jpg 1x, ./images/tablet/img1-2tab-2x.jpg 2x" />
+            <source
+            media="(min-width: 480px)"
+            srcset="./images/mobile/img1-2mob.jpg 1x, ./images/mobile/img1-2mob-2x.jpg 2x" />
+            <img src="./images/mobile/img1-2mob.jpg" alt="мужчина" width="450" />
+            </picture>
+
             <div class="team__container">
             <h3 class="team__subtitle">Ольга Репина</h3>
             <p class="team__text">Frontend Developer</p>
@@ -200,7 +223,18 @@
         </div>
         </li>
         <li class="team__card">
-            <img src="./images/img1-3.jpg" alt="мужчина" width="270" height="260">
+            <picture>
+                <source 
+                media="(min-width: 1200px)"
+                srcset="./images/img1-3.jpg 1x" />
+                <source
+                media="(min-width: 768px)"
+                srcset="./images/tablet/img1-3tab.jpg 1x, ./images/tablet/img1-3tab-2x.jpg 2x" />
+                <source
+                media="(min-width: 480px)"
+                srcset="./images/mobile/img1-3mob.jpg 1x, ./images/mobile/img1-3mob-2x.jpg 2x" />
+                <img src="./images/mobile/img1-3mob.jpg" alt="мужчина" width="450" />
+                </picture>
             <div class="team__container">
             <h3 class="team__subtitle">Николай Тарасов</h3>
             <p  class="team__text">Marketing</p>
@@ -233,7 +267,18 @@
         </div>
         </li>
         <li class="team__card">
-            <img src="./images/img1-4.jpg" alt="мужчина" width="270" height="260">
+            <picture>
+                <source 
+                media="(min-width: 1200px)"
+                srcset="./images/img1-4.jpg 1x" />
+                <source
+                media="(min-width: 768px)"
+                srcset="./images/tablet/img1-4tab.jpg 1x, ./images/tablet/img1-4tab-2x.jpg 2x" />
+                <source
+                media="(min-width: 480px)"
+                srcset="./images/mobile/img1-4mob.jpg 1x, ./images/mobile/img1-4mob-2x.jpg 2x" />
+                <img src="./images/mobile/img1-4mob.jpg" alt="мужчина" width="450" />
+                </picture>
             <div class="team__container">
             <h3 class="team__subtitle">Михаил Ермаков</h3>
             <p class="team__text">UI Designer</p>
