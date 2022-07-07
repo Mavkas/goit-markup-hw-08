@@ -59,8 +59,6 @@ img {
 }
 
 .modal {
-  width: 528px;
-  min-height: 581px;
   border-radius: 4px;
   padding: 40px;
   background-color: #ffffff;
@@ -69,6 +67,18 @@ img {
   left: 50%;
   transform: translate(-50%, -50%) scale(1) rotate(0);
   transition: transform 300ms;
+}
+@media screen and (min-width: 480px) and (max-width: 1199px) {
+  .modal {
+    height: 609px;
+    width: 450px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .modal {
+    width: 528px;
+    min-height: 581px;
+  }
 }
 .backdrop.is-hidden .modal {
   transform: translate(0), scale(0), rotate(180deg);
@@ -115,6 +125,7 @@ img {
 }
 
 .form__field label {
+  font-family: "Roboto";
   font-weight: 400;
   font-size: 12px;
   line-height: 1.16;
@@ -216,6 +227,13 @@ textarea:hover {
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-wrap: wrap;
+}
+@media screen and (min-width: 1200px) {
+  .check__text {
+    font-size: 14px;
+    line-height: 1.71;
+  }
 }
 .check__text span {
   position: relative;
@@ -331,7 +349,7 @@ textarea:hover {
   font-family: "Raleway";
   font-weight: 700;
   font-size: 26px;
-  line-height: 31px;
+  line-height: 1.19;
   color: var(--secondary-color);
 }
 @media screen and (max-width: 1199px) {
@@ -805,9 +823,6 @@ textarea:hover {
 
 .contact__mail--text, .contact__tel--text {
   font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 24px;
   color: var(--link-color);
   font-style: normal;
   font-size: 14px;
@@ -1042,25 +1057,29 @@ textarea:hover {
 @media screen and (min-width: 768px) {
   .auth__list {
     display: flex;
-  }
-}
-@media screen and (min-width: 768px) and (max-width: 1199px) {
-  .auth__list .auth__list li:not(:last-child) {
-    margin-bottom: 10px;
+    flex-wrap: wrap;
   }
 }
 @media screen and (min-width: 1200px) {
   .auth__list {
     display: flex;
   }
-  .auth__list .auth__list li + .auth__list li {
+  .auth__list .auth__list-item + .auth__list-item {
     margin-left: 30px;
     margin-bottom: 0;
   }
 }
 
-.auth__mail, .auth__tel:not(:last-child) {
-  margin-right: 50px;
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .auth__list-item:not(:last-child) {
+    margin-bottom: 10px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .auth__mail, .auth__tel:not(:last-child) {
+    margin-right: 50px;
+  }
 }
 
 .auth__mail, .auth__tel {

@@ -7,8 +7,6 @@
     transition: opacity 600ms, visibility 600ms;}
     
     .modal {
-    width: 528px;
-    min-height: 581px;
     border-radius: 4px;
     padding: 40px;
     background-color: #ffffff;
@@ -17,6 +15,11 @@
     left: 50%;
     transform: translate(-50%, -50%) scale(1) rotate(0);
     transition: transform 300ms;
+    @media screen and (min-width:480px) and (max-width:1199px)
+    {height: 609px;
+    width: 450px;}
+    @include desktop{width: 528px;
+      min-height: 581px;}
     .backdrop.is-hidden & {transform: translate(0), scale(0), rotate(180deg);}
   }
     .modal__close--btn {
@@ -49,6 +52,7 @@
     .form__field:focus-within,
     .form__field:hover {fill: var(--accent-color);}
     .form__field label {
+    font-family: 'Roboto';
     font-weight: 400;
     font-size: 12px;
     line-height: 1.16;
@@ -130,6 +134,10 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-wrap: wrap;
+    @include desktop{
+      @include font(14px, null, 1.71)
+    }
   & span {
     position: relative;
     background-color: transparent;

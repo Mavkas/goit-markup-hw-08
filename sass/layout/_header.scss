@@ -2,14 +2,13 @@
     
     
     /*-------Flex-------*/
-    .container__header{display: flex;
-        align-items: center;
-        @media screen and (max-width: 768px) {
+.container__header{
+    display: flex;
+    align-items: center;
+    @media screen and (max-width: 768px) {
             padding-top: 10px;
-            padding-bottom: 10px;
-          }
-    }
-    .nav{
+            padding-bottom: 10px;}}
+.nav{
     display: flex;
     align-items: center;
 &__list{
@@ -18,8 +17,7 @@
         display: flex;
         .nav__item:not(:last-child) {
           margin-right: 50px;
-        }
-      }
+        }}
     @media screen and (min-width: 1200px){display: flex;};    
     padding: 0;
     margin: 0;}
@@ -39,9 +37,7 @@
           left: 0;
           bottom: 0; 
           bottom: 0;
-        }
-      
-    }}
+        }}}
 &__link{
     display: block;
     margin-right: 50px;
@@ -61,21 +57,25 @@
     .auth__list{
     //@media screen and (min-width: 1200px){display: flex;}; 
     display: none;
-    @include tablet{display: flex;}
+    @include tablet{display: flex;
+    flex-wrap: wrap;}
     margin-left: auto;
     align-items: center;
-        @media screen and (min-width: 768px) and (max-width: 1199px)
-         {.auth__list li:not(:last-child){margin-bottom: 10px;}      
-        }
-        @include desktop {
+    @include desktop {
             display: flex;
-            .auth__list li  + .auth__list li {
+            .auth__list-item  + .auth__list-item {
               margin-left: 30px;
               margin-bottom: 0;}}
 }
+
+.auth__list-item:not(:last-child)
+{@media screen and (min-width: 768px) and (max-width: 1199px){
+            margin-bottom: 10px;}      }
+        
     
     .auth__mail, .auth__tel:not(:last-child)
-    {margin-right: 50px;}
+    {@include desktop{
+        margin-right: 50px;}}
     
     .auth__mail,.auth__tel{ 
         @include desktop {
@@ -103,11 +103,8 @@
 &:focus{color: var(--accent-color);}
 @include desktop {
     margin-right: 10px;
-  }
-}
-   
-    
-    .icon-phone{
+  }}
+     .icon-phone{
     width: 16px;
     align-items: center;
     margin-right: 10px;
