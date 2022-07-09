@@ -1,9 +1,6 @@
 .clients{
-@include mobile {
 padding-top: 60px;
-padding-bottom: 60px;}
-@include tablet {padding-top: 60px;
-padding-bottom: 60px;}
+padding-bottom: 60px;
 @include desktop {padding-top: 94px;
 padding-bottom: 94px;}
 &__logo{fill: currentColor;}
@@ -12,7 +9,8 @@ padding-bottom: 94px;}
     @include font (28px, 700, 1.18);
     text-align: center;
     color:var(--title-text-color);}
-&__list{display: flex;
+&__list{
+    display: flex;
     flex-wrap: wrap;
     gap: 30px;
 }
@@ -20,16 +18,15 @@ padding-bottom: 94px;}
 //{margin-right: 30px;}
 
 &__item
-{@include desktop{box-sizing: border-box;};
-    width: calc((100% - 30px)/2);
-    @media screen and (min-width:768px) {
-        width: calc((100% - 60px)/3);}  
-        @media screen and (min-width:1200px) {
-            width: calc((100% - 150px)/6);}    }
+{width: 100%;
+box-sizing: border-box;}
 &__link{
-    display: inline-flex;
-    width:210px;
-    @include desktop{width: 170px;};
+    display: flex;
+    width: 100%;
+    //display: inline-flex;
+    //width:210px;
+   // @include desktop{width: 170px;};
+   // @include mobile{display: inline-flex; width:210px;}
     height:92px;
     justify-content: center;
     align-items: center;
@@ -43,6 +40,22 @@ padding-bottom: 94px;}
     border: 1px solid var(--accent-color);}
     &S:focus{color: var(--accent-color);
         border: 1px solid var(--accent-color);}}}
+
+@media screen and (min-width: 480px) {
+  .clients__item {
+    width: calc((100% - 30px) / 2);
+  }
+}
+@media screen and (min-width: 768px) {
+  .clients__item {
+    width: calc((100% - 60px) / 3);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .clients__item {
+    width: calc((100% - 150px) / 6);
+  }
+}
     
     
     

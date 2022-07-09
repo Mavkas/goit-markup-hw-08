@@ -1,9 +1,6 @@
 .menu{
-    @include mobile {
         padding-top: 60px;
-        padding-bottom: 60px;}
-        @include tablet {padding-top: 60px;
-        padding-bottom: 60px;}
+        padding-bottom: 60px;
         @include desktop {padding-top: 94px;
         padding-bottom: 94px;}
     //&__list{
@@ -23,12 +20,12 @@
     @include font (18px, 700, 2);
     font-family: 'Roboto';
     letter-spacing: 0.06em;
-    text-align: center;
+    //text-align: center;
     color:var(--title-text-color);}
 &__top--text{
     margin-top: 4px;
     @include font (16px, null, 1.88);
-    text-align: center;
+    //text-align: center;
     color:var(--primary-text-color);}
 &__item{
     cursor: pointer;
